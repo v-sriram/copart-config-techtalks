@@ -1,2 +1,7 @@
 configuration:
   message: Hello world from Sriram
+---
+spring:
+  profiles: dev
+configuration:
+  message: Hello world from Dev
