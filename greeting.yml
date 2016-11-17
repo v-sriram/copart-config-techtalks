@@ -1,2 +1,7 @@
 techtalk:
   message: Hello from Copart Tech Talks!!!
+---
+spring:
+  profiles: dev
+techtalk:
+  message: Hello from Dev!!!
