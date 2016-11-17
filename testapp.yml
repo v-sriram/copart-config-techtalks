@@ -1,5 +1,15 @@
 configuration:
   message: Hello world from Sriram @ Copart Tech Talks in Houston conf room
+eureka:
+ password: '{cipher}AQBa9Z3zfY1EzaOGPNkiL1+JXzNGCPAgUNszzXclHOHk3zcOIDhChKLupR4j42ht8cOVIXDDtu6H4SNVa7XsgqCismTPsAkPyshzueNnn5RkQmpqEAR7RL2HWZ8MSfrM2NHFTD9ttxwfR1rqrN6SY4iUkt0XiYGfWt9oU3ioz3jV1g7PWuW71EMnOjFZJvO9DeZfrzIsQJqpQQ9Jh1mSeAj9El86N6E6R2zCacbE1yDMJUwQaBbDN/6bB9rt6oZAiYMy1S6Dcnr3znIEvtvFNVwaKLnLe7dDmPb0FUrhs5cCRhQFjETteNjyiNvxu3jPAJ74WYLFVH0zHp3dL75qyNv7Az7B4koJpZNspS2pIbDPOS3sQR3uUXWPH+8MP2cK3oc='
+ instance:     
+   healthCheckUrlPath: /admin/health
+   statusPageUrlPath: /admin/info
+   leaseExpirationDurationInSeconds: 90
+ client:
+   enabled: true
+   serviceUrl:
+     defaultZone: http://user:${eureka.password}@10.103.234.212:8761/eureka/
 ---
 spring:
   profiles: dev
