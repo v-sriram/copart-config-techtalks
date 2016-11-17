@@ -1,14 +1,11 @@
 configuration:
   message: Hello world from Sriram @ Copart Tech Talks in Houston conf room
 ---
-
 spring:
   profiles: dev
 configuration:
   message: Hello world from Dev
-  
 ---
-
 spring:
   profiles: qa
 configuration:
