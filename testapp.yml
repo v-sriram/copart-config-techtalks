@@ -1,5 +1,5 @@
 configuration:
-  message: Hello world from Sriram
+  message: Hello world from Sriram @ Copart Tech Talks
 ---
 spring:
   profiles: dev
