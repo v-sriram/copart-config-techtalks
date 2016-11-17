@@ -5,3 +5,8 @@ spring:
   profiles: dev
 techtalk:
   message: Hello from Dev!!!
+---
+spring:
+  profiles: qa
+techtalk:
+  message: Hello from QA!!!
